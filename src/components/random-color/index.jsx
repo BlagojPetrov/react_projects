@@ -57,9 +57,9 @@ export default function RandomColor() {
           justifyContent: "center",
           alignItems: "center",
           color: "#fff",
-          fontSize: "60px",
+          fontSize: "50px",
           marginTop: "50px",
-          flexDirection: 'column',
+          flexDirection: 'column',  
           gap: '20px'
         }}
       >
