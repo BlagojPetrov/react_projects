@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 export default function RandomColor() {
   const [typeOfColor, setTypeOfColor] = useState("hex");
@@ -8,7 +8,7 @@ export default function RandomColor() {
     return Math.floor(Math.random() * length);
   }
 
-  function handleCreateRandomHexColor() {
+  const handleCreateRandomHexColor = useCallback(() => {
     const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
     let hexColor = "#";
 
@@ -17,20 +17,23 @@ export default function RandomColor() {
     }
 
     setColor(hexColor);
-  }
+  }, []);
 
-  function handleCreateRandomRgbColor() {
+  const handleCreateRandomRgbColor = useCallback(() => {
     const r = randomColorUtility(256);
     const g = randomColorUtility(256);
     const b = randomColorUtility(256);
     const rgbColor = `rgb(${r}, ${g}, ${b})`;
     setColor(rgbColor);
-  }
+  }, []);
 
   useEffect(() => {
-    if (typeOfColor === "rgb") handleCreateRandomRgbColor();
-    else handleCreateRandomHexColor();
-  }, [typeOfColor]);
+    if (typeOfColor === "rgb") {
+      handleCreateRandomRgbColor();
+    } else {
+      handleCreateRandomHexColor();
+    }
+  }, [typeOfColor, handleCreateRandomHexColor, handleCreateRandomRgbColor]);
 
   return (
     <div
@@ -59,8 +62,8 @@ export default function RandomColor() {
           color: "#fff",
           fontSize: "50px",
           marginTop: "50px",
-          flexDirection: 'column',  
-          gap: '20px'
+          flexDirection: "column",
+          gap: "20px",
         }}
       >
         <h3>{typeOfColor === "rgb" ? "RGB Color" : "HEX Color"}</h3>
