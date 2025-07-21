@@ -1,7 +1,8 @@
 import "./App.css";
 // import ImageSlider from "./components/image_slider";
 // import LoadMoreData from "./components/load-more-data";
-import QRCodeGenerator from "./components/qr-code-generator";
+// import QRCodeGenerator from "./components/qr-code-generator";
+import LightDarkMode from "./light-dark-mode";
 // import TreeView from "./components/tree-view";
 // import Menus from "./components/tree-view/data";
 // import Accordian from './components/accordian';
@@ -30,7 +31,10 @@ function App() {
       {/* <TreeView Menus={Menus} /> */}
 
       {/* QR Code Generator component */}
-      <QRCodeGenerator />
+      {/* <QRCodeGenerator /> */}
+
+      {/* Light Dark Mode component */}
+      <LightDarkMode />
     </div>
   );
 }
