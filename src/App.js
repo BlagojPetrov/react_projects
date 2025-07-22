@@ -1,4 +1,5 @@
 import "./App.css";
+import ScrollIndicator from "./components/scroll-indicator";
 // import ImageSlider from "./components/image_slider";
 // import LoadMoreData from "./components/load-more-data";
 // import QRCodeGenerator from "./components/qr-code-generator";
@@ -34,7 +35,10 @@ function App() {
       {/* <QRCodeGenerator /> */}
 
       {/* Light Dark Mode component */}
-      <LightDarkMode />
+      {/* <LightDarkMode /> */}
+
+      {/* Scroll indicator component */}
+      <ScrollIndicator url={'https://dummyjson.com/products?limit=100'} />
     </div>
   );
 }
