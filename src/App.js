@@ -1,5 +1,6 @@
 import "./App.css";
-import TabTest from "./components/custom-tabs/tab-test";
+import ModalTest from "./components/custom-modal-popup/modal-test";
+// import TabTest from "./components/custom-tabs/tab-test";
 // import ScrollIndicator from "./components/scroll-indicator";
 // import ImageSlider from "./components/image_slider";
 // import LoadMoreData from "./components/load-more-data";
@@ -42,7 +43,11 @@ function App() {
       {/* <ScrollIndicator url={'https://dummyjson.com/products?limit=100'} /> */}
 
       {/* Tabs Component */}
-      <TabTest />
+      {/* <TabTest /> */}
+
+      {/* Custom modal component */}
+      <ModalTest />
+
     </div>
   );
 }

@@ -16,7 +16,7 @@ export default function TabTest() {
     },
     {
       label: "Tab 3",
-      content: <RandomComponent />
+      content: <RandomComponent />,
     },
   ];
 
@@ -24,5 +24,5 @@ export default function TabTest() {
     console.log(currentTabIndex);
   }
 
-  return <Tabs tabsContent={tabs} onChange={handleChange}/>;
+  return <Tabs tabsContent={tabs} onChange={handleChange} />;
 }
