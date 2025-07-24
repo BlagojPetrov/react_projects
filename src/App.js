@@ -1,6 +1,7 @@
 import "./App.css";
+import SearchAutoComplete from "./components/search-autocomplete-with-api";
 // import ModalTest from "./components/custom-modal-popup/modal-test";
-import GitHubProfileFinder from "./components/github-profile-finder";
+// import GitHubProfileFinder from "./components/github-profile-finder";
 // import TabTest from "./components/custom-tabs/tab-test";
 // import ScrollIndicator from "./components/scroll-indicator";
 // import ImageSlider from "./components/image_slider";
@@ -50,7 +51,10 @@ function App() {
       {/* <ModalTest /> */}
 
       {/* Github profile finder component */}
-      <GitHubProfileFinder />
+      {/* <GitHubProfileFinder /> */}
+
+      {/* Search autocomplete with API component */}
+      <SearchAutoComplete />
     </div>
   );
 }
