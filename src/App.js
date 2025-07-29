@@ -1,6 +1,8 @@
 import "./App.css";
-import SearchAutoComplete from "./components/search-autocomplete-with-api";
-import TicTacToe from "./components/tic-tac-toe";
+import FeatureFlags from "./components/feature-flag";
+import FeatureFlagGlobalState from "./components/feature-flag/context";
+// import SearchAutoComplete from "./components/search-autocomplete-with-api";
+// import TicTacToe from "./components/tic-tac-toe";
 // import ModalTest from "./components/custom-modal-popup/modal-test";
 // import GitHubProfileFinder from "./components/github-profile-finder";
 // import TabTest from "./components/custom-tabs/tab-test";
@@ -58,7 +60,12 @@ function App() {
       {/* <SearchAutoComplete /> */}
 
       {/* Tic Tac Toe component */}
-      <TicTacToe />
+      {/* <TicTacToe /> */}
+
+      {/* Feature Flag Implementation */}
+      <FeatureFlagGlobalState>
+        <FeatureFlags />
+      </FeatureFlagGlobalState>
     </div>
   );
 }
