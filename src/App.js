@@ -1,6 +1,7 @@
 import "./App.css";
 import FeatureFlags from "./components/feature-flag";
 import FeatureFlagGlobalState from "./components/feature-flag/context";
+import UseFetchHookTest from "./components/use-fetch/text";
 // import SearchAutoComplete from "./components/search-autocomplete-with-api";
 // import TicTacToe from "./components/tic-tac-toe";
 // import ModalTest from "./components/custom-modal-popup/modal-test";
@@ -63,9 +64,12 @@ function App() {
       {/* <TicTacToe /> */}
 
       {/* Feature Flag Implementation */}
-      <FeatureFlagGlobalState>
+      {/* <FeatureFlagGlobalState>
         <FeatureFlags />
-      </FeatureFlagGlobalState>
+      </FeatureFlagGlobalState> */}
+
+      {/* useFetch - Custom Hook */}
+      <UseFetchHookTest />
     </div>
   );
 }
