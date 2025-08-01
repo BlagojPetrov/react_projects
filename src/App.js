@@ -1,9 +1,10 @@
 import "./App.css";
+import ScrollToTopAndBottom from "./components/scroll-to-top-and-bottom";
 // import FeatureFlags from "./components/feature-flag";
 // import FeatureFlagGlobalState from "./components/feature-flag/context";
 // import UseFetchHookTest from "./components/use-fetch/text";
-import UseOnClickOutsideTest from "./components/use-outside-click/text";
-import UseWindowResizeTest from "./components/use-window-resize/test";
+// import UseOnClickOutsideTest from "./components/use-outside-click/text";
+// import UseWindowResizeTest from "./components/use-window-resize/test";
 // import SearchAutoComplete from "./components/search-autocomplete-with-api";
 // import TicTacToe from "./components/tic-tac-toe";
 // import ModalTest from "./components/custom-modal-popup/modal-test";
@@ -77,7 +78,10 @@ function App() {
       {/* <UseOnClickOutsideTest /> */}
 
       {/* Use Window Resize Hook Test */}
-      <UseWindowResizeTest />
+      {/* <UseWindowResizeTest /> */}
+
+      <ScrollToTopAndBottom />
+
     </div>
   );
 }
