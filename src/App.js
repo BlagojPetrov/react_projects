@@ -85,7 +85,7 @@ function App() {
       {/* <ScrollToTopAndBottom /> */}
 
       {/* Scroll to a Particular section */}
-      <ScrollToSection />
+      {/* <ScrollToSection /> */}
     </div>
   );
 }
