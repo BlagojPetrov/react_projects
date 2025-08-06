@@ -89,7 +89,7 @@ function App() {
       {/* <ScrollToSection /> */}
 
       {/* Weather App */}
-      <Weather />
+      {/* <Weather /> */}
     </div>
   );
 }
