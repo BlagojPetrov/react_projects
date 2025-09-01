@@ -1,8 +1,10 @@
-import { extendTheme } from "@chakra-ui/react";
+import { extendTheme, ChakraProvider } from "@chakra-ui/react";
 
 const theme = extendTheme({
-  initalColorMode: "light",
-  useSystemColorMode: true,
+  fonts: {
+    heading: `'Figtree', sans-serif`,
+    body: `'Figtree', sans-serif`,
+  },
 });
 
-export default theme;
+export default theme
