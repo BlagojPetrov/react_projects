@@ -36,6 +36,8 @@
     transform: rotate(360deg);
   }
 } */
+@import "tailwindcss";
+
 
 .App {
   text-align: center;
@@ -45,7 +47,6 @@
   border-radius: 20px;
   height: 470px;
   padding: 20px 15px;
-  background: rgb(0, 255, 166);
 }
 
 .search-engine {

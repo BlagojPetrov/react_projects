@@ -1,5 +1,5 @@
 import "./App.css";
-import Weather from "./components/weather-app/weather";
+// import Weather from "./components/weather-app/weather";
 // import ScrollToTopAndBottom from "./components/scroll-to-top-and-bottom";
 // import ScrollToSection from "./components/scroll-to-top-and-bottom/scroll-to-section";
 // import FeatureFlags from "./components/feature-flag";
@@ -88,8 +88,11 @@ function App() {
       {/* Scroll to a Particular section */}
       {/* <ScrollToSection /> */}
 
-      {/* Weather App */}
-      <Weather />
+      {/* Weather App
+      <Weather /> */}
+      <div className="text-red-500">
+        Hello
+      </div>
     </div>
   );
 }
