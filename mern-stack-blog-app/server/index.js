@@ -14,4 +14,4 @@ app.use("/api", (req, res) => {
   res.send("Hello World");
 });
 
-app.listen(500, () => console.log(`App is running at 5000...`));
+app.listen(5000, () => console.log(`App is running at 5000...`));
